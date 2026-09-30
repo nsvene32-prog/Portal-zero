@@ -32,9 +32,18 @@ window.addEventListener("resize", () => {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 });
 
+// 1. Create a clock instance outside the loop
+const clock = new THREE.Clock();
+
 function animate() {
     requestAnimationFrame(animate);
-
+    
+    // 2. Get the time elapsed since the last frame (in seconds)
+    const delta = clock.getDelta(); 
+    
+    
     world.step(1 / 60);
     renderer.render(scene, camera);
 }
+
+animate();
