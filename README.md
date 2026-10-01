@@ -1,4 +1,5 @@
 # Portal-zero
+!(img/portal-zero-logo.webp)
 ## A three.js build of a precursor to portal and portal 2
 ## Takes place in the old apertue science lab
 
